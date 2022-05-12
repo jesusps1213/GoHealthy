@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Veterinario
@@ -67,12 +68,12 @@ namespace Veterinario
                 return "error";
             }
         }
-        public String insertaMascota(String DNI_Dueno, String NombreM, String chip, String Especie)
+        public String insertaMascota(String DNI_Dueno, String NombreM, String Especie, String chip)
         {
             try
             {
                 conexion.Open();
-                MySqlCommand consulta = new MySqlCommand("INSERT INTO `mascota` ( `Nombre`,`DNI_dueño`, `especie, `chip`) " +
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO `mascota` (`Nombre`,`DNI_dueño`,`especie`,`chip`) " +
                     "VALUES(@NombreM,@DNI_Dueno,@especie,@chip)", conexion);
                 consulta.Parameters.AddWithValue("@NombreM", NombreM);
                 consulta.Parameters.AddWithValue("@DNI_Dueno", DNI_Dueno);
@@ -90,6 +91,26 @@ namespace Veterinario
                 return "error";
             }
         }
+         public DataTable getUsuarioPorDNI(String Dni)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT* FROM usuarios WHERE DNI = @DNI ", conexion);
+                consulta.Parameters.AddWithValue("@DNI", Dni);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable usuarios = new DataTable();
+                usuarios.Load(resultado);
+                conexion.Close();
+                return usuarios;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+
+
     }
 
 

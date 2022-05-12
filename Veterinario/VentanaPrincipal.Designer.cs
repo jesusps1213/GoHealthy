@@ -49,22 +49,33 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.InsertarMascota = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxEspecie = new System.Windows.Forms.TextBox();
             this.Especie = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxChip = new System.Windows.Forms.TextBox();
             this.chip = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxNombrem = new System.Windows.Forms.TextBox();
             this.NombreM = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TextBoxDNI = new System.Windows.Forms.TextBox();
             this.DNI_Dueno = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.labelNombre = new System.Windows.Forms.Label();
+            this.labelApellido = new System.Windows.Forms.Label();
+            this.labelPerfil = new System.Windows.Forms.Label();
+            this.labelMascota = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.Datos = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -236,13 +247,13 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.InsertarMascota);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.textBoxEspecie);
             this.tabPage2.Controls.Add(this.Especie);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.textBoxChip);
             this.tabPage2.Controls.Add(this.chip);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.textBoxNombrem);
             this.tabPage2.Controls.Add(this.NombreM);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.TextBoxDNI);
             this.tabPage2.Controls.Add(this.DNI_Dueno);
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 42);
@@ -264,12 +275,12 @@
             this.InsertarMascota.UseVisualStyleBackColor = true;
             this.InsertarMascota.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // textBoxEspecie
             // 
-            this.textBox1.Location = new System.Drawing.Point(634, 196);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 26);
-            this.textBox1.TabIndex = 20;
+            this.textBoxEspecie.Location = new System.Drawing.Point(634, 196);
+            this.textBoxEspecie.Name = "textBoxEspecie";
+            this.textBoxEspecie.Size = new System.Drawing.Size(242, 26);
+            this.textBoxEspecie.TabIndex = 20;
             // 
             // Especie
             // 
@@ -280,12 +291,12 @@
             this.Especie.TabIndex = 19;
             this.Especie.Text = "Especie";
             // 
-            // textBox2
+            // textBoxChip
             // 
-            this.textBox2.Location = new System.Drawing.Point(634, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 26);
-            this.textBox2.TabIndex = 18;
+            this.textBoxChip.Location = new System.Drawing.Point(634, 136);
+            this.textBoxChip.Name = "textBoxChip";
+            this.textBoxChip.Size = new System.Drawing.Size(242, 26);
+            this.textBoxChip.TabIndex = 18;
             // 
             // chip
             // 
@@ -296,12 +307,12 @@
             this.chip.TabIndex = 17;
             this.chip.Text = "chip";
             // 
-            // textBox3
+            // textBoxNombrem
             // 
-            this.textBox3.Location = new System.Drawing.Point(236, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(242, 26);
-            this.textBox3.TabIndex = 16;
+            this.textBoxNombrem.Location = new System.Drawing.Point(236, 199);
+            this.textBoxNombrem.Name = "textBoxNombrem";
+            this.textBoxNombrem.Size = new System.Drawing.Size(242, 26);
+            this.textBoxNombrem.TabIndex = 16;
             // 
             // NombreM
             // 
@@ -312,12 +323,12 @@
             this.NombreM.TabIndex = 15;
             this.NombreM.Text = "Nombre";
             // 
-            // textBox4
+            // TextBoxDNI
             // 
-            this.textBox4.Location = new System.Drawing.Point(236, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(242, 26);
-            this.textBox4.TabIndex = 14;
+            this.TextBoxDNI.Location = new System.Drawing.Point(236, 139);
+            this.TextBoxDNI.Name = "TextBoxDNI";
+            this.TextBoxDNI.Size = new System.Drawing.Size(242, 26);
+            this.TextBoxDNI.TabIndex = 14;
             // 
             // DNI_Dueno
             // 
@@ -330,7 +341,19 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.Datos);
+            this.tabPage3.Controls.Add(this.labelEmail);
+            this.tabPage3.Controls.Add(this.labelMascota);
+            this.tabPage3.Controls.Add(this.labelPerfil);
+            this.tabPage3.Controls.Add(this.labelApellido);
+            this.tabPage3.Controls.Add(this.labelNombre);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.textBox7);
+            this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.ImageIndex = 2;
             this.tabPage3.Location = new System.Drawing.Point(4, 42);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -340,17 +363,7 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 5);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1184, 553);
-            this.dataGridView1.TabIndex = 0;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // imageList1
             // 
@@ -359,6 +372,124 @@
             this.imageList1.Images.SetKeyName(0, "icons8_user_48px.png");
             this.imageList1.Images.SetKeyName(1, "icons8_dog_paw_100px.png");
             this.imageList1.Images.SetKeyName(2, "icons8_folder_48px.png");
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(255, 401);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Mascota";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(255, 304);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 20);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Apellido";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(274, 451);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 20);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Email";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(276, 357);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 20);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Perfil";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(255, 239);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 20);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Nombre";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(371, 62);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(242, 26);
+            this.textBox7.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(283, 62);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(37, 20);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "DNI";
+            // 
+            // labelNombre
+            // 
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Location = new System.Drawing.Point(350, 239);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(48, 20);
+            this.labelNombre.TabIndex = 28;
+            this.labelNombre.Text = "Texto";
+            // 
+            // labelApellido
+            // 
+            this.labelApellido.AutoSize = true;
+            this.labelApellido.Location = new System.Drawing.Point(350, 304);
+            this.labelApellido.Name = "labelApellido";
+            this.labelApellido.Size = new System.Drawing.Size(48, 20);
+            this.labelApellido.TabIndex = 29;
+            this.labelApellido.Text = "Texto";
+            // 
+            // labelPerfil
+            // 
+            this.labelPerfil.AutoSize = true;
+            this.labelPerfil.Location = new System.Drawing.Point(350, 357);
+            this.labelPerfil.Name = "labelPerfil";
+            this.labelPerfil.Size = new System.Drawing.Size(48, 20);
+            this.labelPerfil.TabIndex = 30;
+            this.labelPerfil.Text = "Texto";
+            this.labelPerfil.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // labelMascota
+            // 
+            this.labelMascota.AutoSize = true;
+            this.labelMascota.Location = new System.Drawing.Point(350, 401);
+            this.labelMascota.Name = "labelMascota";
+            this.labelMascota.Size = new System.Drawing.Size(48, 20);
+            this.labelMascota.TabIndex = 31;
+            this.labelMascota.Text = "Texto";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(350, 451);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(48, 20);
+            this.labelEmail.TabIndex = 32;
+            this.labelEmail.Text = "Texto";
+            // 
+            // Datos
+            // 
+            this.Datos.Location = new System.Drawing.Point(371, 130);
+            this.Datos.Name = "Datos";
+            this.Datos.Size = new System.Drawing.Size(242, 84);
+            this.Datos.TabIndex = 33;
+            this.Datos.Text = "Mostrar datos";
+            this.Datos.UseVisualStyleBackColor = true;
+            this.Datos.Click += new System.EventHandler(this.Datos_Click);
             // 
             // VentanaPrincipal
             // 
@@ -377,7 +508,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -387,7 +518,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox textBoxNombre;
@@ -405,15 +535,28 @@
         private System.Windows.Forms.Label Email;
         private System.Windows.Forms.TextBox textBoxPerfil;
         private System.Windows.Forms.Label perfil;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxEspecie;
         private System.Windows.Forms.Label Especie;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxChip;
         private System.Windows.Forms.Label chip;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxNombrem;
         private System.Windows.Forms.Label NombreM;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TextBoxDNI;
         private System.Windows.Forms.Label DNI_Dueno;
         private System.Windows.Forms.Button InsertarMascota;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelPerfil;
+        private System.Windows.Forms.Label labelApellido;
+        private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelMascota;
+        private System.Windows.Forms.Button Datos;
     }
 }
 

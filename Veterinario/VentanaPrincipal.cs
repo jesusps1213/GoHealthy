@@ -16,6 +16,7 @@ namespace Veterinario
         Conexion conexion = new Conexion();
         public VentanaPrincipal()
         {
+            
             InitializeComponent();
         }
         private void label1_Click(object sender, EventArgs e)
@@ -33,7 +34,46 @@ namespace Veterinario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(conexion.insertaMascota(NombreM.Text, DNI_Dueno.Text, chip.Text,Especie.Text));
+            MessageBox.Show(conexion.insertaMascota(textBoxNombrem.Text, TextBoxDNI.Text, textBoxEspecie.Text, textBoxChip.Text));
         }
+
+       private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void Datos_Click(object sender, EventArgs e)
+        {
+            String Dni = textBox7.Text;
+            DataTable misPokemons = new DataTable();
+            misPokemons = conexion.getUsuarioPorDNI(Dni);
+            labelNombre.Text = misPokemons.Rows[0]["Nombre"].ToString();
+            labelApellido.Text = misPokemons.Rows[0]["Apellido"].ToString();
+            labelEmail.Text = misPokemons.Rows[0]["email"].ToString();
+            labelMascota.Text = misPokemons.Rows[0]["mascota"].ToString();
+            labelPerfil.Text = misPokemons.Rows[0]["perfil"].ToString();
+        }
+
     }
+   
 }
