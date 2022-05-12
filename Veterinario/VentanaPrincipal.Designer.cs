@@ -32,6 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBoxMascota = new System.Windows.Forms.TextBox();
+            this.mascota = new System.Windows.Forms.Label();
+            this.textBoxApellido = new System.Windows.Forms.TextBox();
+            this.Apellido = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.Label();
+            this.textBoxPerfil = new System.Windows.Forms.TextBox();
+            this.perfil = new System.Windows.Forms.Label();
             this.InsertaUsuario = new System.Windows.Forms.Button();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,19 +48,17 @@
             this.textBox1DNI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.textBoxApellido = new System.Windows.Forms.TextBox();
-            this.Apellido = new System.Windows.Forms.Label();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.Email = new System.Windows.Forms.Label();
-            this.textBoxPerfil = new System.Windows.Forms.TextBox();
-            this.perfil = new System.Windows.Forms.Label();
-            this.textBoxMascota = new System.Windows.Forms.TextBox();
-            this.mascota = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Especie = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.chip = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,6 +108,70 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBoxMascota
+            // 
+            this.textBoxMascota.Location = new System.Drawing.Point(411, 309);
+            this.textBoxMascota.Name = "textBoxMascota";
+            this.textBoxMascota.Size = new System.Drawing.Size(242, 26);
+            this.textBoxMascota.TabIndex = 14;
+            // 
+            // mascota
+            // 
+            this.mascota.AutoSize = true;
+            this.mascota.Location = new System.Drawing.Point(285, 309);
+            this.mascota.Name = "mascota";
+            this.mascota.Size = new System.Drawing.Size(70, 20);
+            this.mascota.TabIndex = 13;
+            this.mascota.Text = "Mascota";
+            // 
+            // textBoxApellido
+            // 
+            this.textBoxApellido.Location = new System.Drawing.Point(616, 182);
+            this.textBoxApellido.Name = "textBoxApellido";
+            this.textBoxApellido.Size = new System.Drawing.Size(242, 26);
+            this.textBoxApellido.TabIndex = 12;
+            // 
+            // Apellido
+            // 
+            this.Apellido.AutoSize = true;
+            this.Apellido.Location = new System.Drawing.Point(516, 182);
+            this.Apellido.Name = "Apellido";
+            this.Apellido.Size = new System.Drawing.Size(65, 20);
+            this.Apellido.TabIndex = 11;
+            this.Apellido.Text = "Apellido";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(616, 239);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(242, 26);
+            this.textBoxEmail.TabIndex = 10;
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(490, 239);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(48, 20);
+            this.Email.TabIndex = 9;
+            this.Email.Text = "Email";
+            // 
+            // textBoxPerfil
+            // 
+            this.textBoxPerfil.Location = new System.Drawing.Point(616, 122);
+            this.textBoxPerfil.Name = "textBoxPerfil";
+            this.textBoxPerfil.Size = new System.Drawing.Size(242, 26);
+            this.textBoxPerfil.TabIndex = 8;
+            // 
+            // perfil
+            // 
+            this.perfil.AutoSize = true;
+            this.perfil.Location = new System.Drawing.Point(544, 122);
+            this.perfil.Name = "perfil";
+            this.perfil.Size = new System.Drawing.Size(44, 20);
+            this.perfil.TabIndex = 7;
+            this.perfil.Text = "Perfil";
             // 
             // InsertaUsuario
             // 
@@ -164,8 +234,14 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.Especie);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.chip);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 42);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -175,27 +251,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(530, 171);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(252, 171);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -229,69 +284,69 @@
             this.imageList1.Images.SetKeyName(1, "icons8_dog_paw_100px.png");
             this.imageList1.Images.SetKeyName(2, "icons8_folder_48px.png");
             // 
-            // textBoxApellido
+            // textBox1
             // 
-            this.textBoxApellido.Location = new System.Drawing.Point(616, 182);
-            this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(242, 26);
-            this.textBoxApellido.TabIndex = 12;
+            this.textBox1.Location = new System.Drawing.Point(634, 196);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(242, 26);
+            this.textBox1.TabIndex = 20;
             // 
-            // Apellido
+            // Especie
             // 
-            this.Apellido.AutoSize = true;
-            this.Apellido.Location = new System.Drawing.Point(516, 182);
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Size = new System.Drawing.Size(65, 20);
-            this.Apellido.TabIndex = 11;
-            this.Apellido.Text = "Apellido";
+            this.Especie.AutoSize = true;
+            this.Especie.Location = new System.Drawing.Point(534, 196);
+            this.Especie.Name = "Especie";
+            this.Especie.Size = new System.Drawing.Size(66, 20);
+            this.Especie.TabIndex = 19;
+            this.Especie.Text = "Especie";
             // 
-            // textBoxEmail
+            // textBox2
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(616, 239);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(242, 26);
-            this.textBoxEmail.TabIndex = 10;
+            this.textBox2.Location = new System.Drawing.Point(634, 136);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(242, 26);
+            this.textBox2.TabIndex = 18;
             // 
-            // Email
+            // chip
             // 
-            this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(490, 239);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(48, 20);
-            this.Email.TabIndex = 9;
-            this.Email.Text = "Email";
+            this.chip.AutoSize = true;
+            this.chip.Location = new System.Drawing.Point(562, 136);
+            this.chip.Name = "chip";
+            this.chip.Size = new System.Drawing.Size(38, 20);
+            this.chip.TabIndex = 17;
+            this.chip.Text = "chip";
             // 
-            // textBoxPerfil
+            // textBox3
             // 
-            this.textBoxPerfil.Location = new System.Drawing.Point(616, 122);
-            this.textBoxPerfil.Name = "textBoxPerfil";
-            this.textBoxPerfil.Size = new System.Drawing.Size(242, 26);
-            this.textBoxPerfil.TabIndex = 8;
+            this.textBox3.Location = new System.Drawing.Point(236, 199);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(242, 26);
+            this.textBox3.TabIndex = 16;
             // 
-            // perfil
+            // label6
             // 
-            this.perfil.AutoSize = true;
-            this.perfil.Location = new System.Drawing.Point(544, 122);
-            this.perfil.Name = "perfil";
-            this.perfil.Size = new System.Drawing.Size(44, 20);
-            this.perfil.TabIndex = 7;
-            this.perfil.Text = "Perfil";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(136, 199);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Nombre";
             // 
-            // textBoxMascota
+            // textBox4
             // 
-            this.textBoxMascota.Location = new System.Drawing.Point(411, 309);
-            this.textBoxMascota.Name = "textBoxMascota";
-            this.textBoxMascota.Size = new System.Drawing.Size(242, 26);
-            this.textBoxMascota.TabIndex = 14;
+            this.textBox4.Location = new System.Drawing.Point(236, 139);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(242, 26);
+            this.textBox4.TabIndex = 14;
             // 
-            // mascota
+            // label7
             // 
-            this.mascota.AutoSize = true;
-            this.mascota.Location = new System.Drawing.Point(285, 309);
-            this.mascota.Name = "mascota";
-            this.mascota.Size = new System.Drawing.Size(70, 20);
-            this.mascota.TabIndex = 13;
-            this.mascota.Text = "Mascota";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(136, 145);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 20);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "DNI_Dueño";
             // 
             // VentanaPrincipal
             // 
@@ -319,8 +374,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ImageList imageList1;
@@ -340,6 +393,14 @@
         private System.Windows.Forms.Label Email;
         private System.Windows.Forms.TextBox textBoxPerfil;
         private System.Windows.Forms.Label perfil;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label Especie;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label chip;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label7;
     }
 }
 
