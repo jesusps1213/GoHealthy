@@ -67,6 +67,29 @@ namespace Veterinario
                 return "error";
             }
         }
+        public String insertaMascota(String DNI_Dueno, String NombreM, String chip, String Especie)
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("INSERT INTO `mascota` ( `Nombre`,`DNI_dueño`, `especie, `chip`) " +
+                    "VALUES(@NombreM,@DNI_Dueno,@especie,@chip)", conexion);
+                consulta.Parameters.AddWithValue("@NombreM", NombreM);
+                consulta.Parameters.AddWithValue("@DNI_Dueno", DNI_Dueno);
+                consulta.Parameters.AddWithValue("@especie", Especie);
+                consulta.Parameters.AddWithValue("@chip", chip);
+                
+               
+
+                consulta.ExecuteNonQuery();
+                conexion.Close();
+                return "ok";
+            }
+            catch (MySqlException e)
+            {
+                return "error";
+            }
+        }
     }
 
 

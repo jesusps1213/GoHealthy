@@ -30,8 +30,10 @@ namespace Veterinario
             string myHash = BCrypt.Net.BCrypt.HashPassword(textoPassword, BCrypt.Net.BCrypt.GenerateSalt());
             MessageBox.Show(conexion.insertaUsuario(textBox1DNI.Text, textBoxNombre.Text, myHash, textBoxApellido.Text, textBoxEmail.Text, textBoxMascota.Text, textBoxPerfil.Text));
         }
-       
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(conexion.insertaMascota(NombreM.Text, DNI_Dueno.Text, chip.Text,Especie.Text));
+        }
     }
 }

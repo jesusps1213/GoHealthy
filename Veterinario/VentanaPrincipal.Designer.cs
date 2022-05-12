@@ -48,17 +48,18 @@
             this.textBox1DNI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.InsertarMascota = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Especie = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.chip = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.NombreM = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.DNI_Dueno = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -234,14 +235,15 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.InsertarMascota);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.Especie);
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.chip);
             this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.NombreM);
             this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.DNI_Dueno);
             this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 42);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -252,37 +254,15 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // InsertarMascota
             // 
-            this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.ImageIndex = 2;
-            this.tabPage3.Location = new System.Drawing.Point(4, 42);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage3.Size = new System.Drawing.Size(1192, 563);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 5);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1184, 553);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "icons8_user_48px.png");
-            this.imageList1.Images.SetKeyName(1, "icons8_dog_paw_100px.png");
-            this.imageList1.Images.SetKeyName(2, "icons8_folder_48px.png");
+            this.InsertarMascota.Location = new System.Drawing.Point(405, 279);
+            this.InsertarMascota.Name = "InsertarMascota";
+            this.InsertarMascota.Size = new System.Drawing.Size(311, 107);
+            this.InsertarMascota.TabIndex = 21;
+            this.InsertarMascota.Text = "Insertar Mascota";
+            this.InsertarMascota.UseVisualStyleBackColor = true;
+            this.InsertarMascota.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -323,14 +303,14 @@
             this.textBox3.Size = new System.Drawing.Size(242, 26);
             this.textBox3.TabIndex = 16;
             // 
-            // label6
+            // NombreM
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(136, 199);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Nombre";
+            this.NombreM.AutoSize = true;
+            this.NombreM.Location = new System.Drawing.Point(136, 199);
+            this.NombreM.Name = "NombreM";
+            this.NombreM.Size = new System.Drawing.Size(65, 20);
+            this.NombreM.TabIndex = 15;
+            this.NombreM.Text = "Nombre";
             // 
             // textBox4
             // 
@@ -339,14 +319,46 @@
             this.textBox4.Size = new System.Drawing.Size(242, 26);
             this.textBox4.TabIndex = 14;
             // 
-            // label7
+            // DNI_Dueno
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(136, 145);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 20);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "DNI_Dueño";
+            this.DNI_Dueno.AutoSize = true;
+            this.DNI_Dueno.Location = new System.Drawing.Point(136, 145);
+            this.DNI_Dueno.Name = "DNI_Dueno";
+            this.DNI_Dueno.Size = new System.Drawing.Size(94, 20);
+            this.DNI_Dueno.TabIndex = 13;
+            this.DNI_Dueno.Text = "DNI_Dueño";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.ImageIndex = 2;
+            this.tabPage3.Location = new System.Drawing.Point(4, 42);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage3.Size = new System.Drawing.Size(1192, 563);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(4, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(1184, 553);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "icons8_user_48px.png");
+            this.imageList1.Images.SetKeyName(1, "icons8_dog_paw_100px.png");
+            this.imageList1.Images.SetKeyName(2, "icons8_folder_48px.png");
             // 
             // VentanaPrincipal
             // 
@@ -398,9 +410,10 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label chip;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label NombreM;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label DNI_Dueno;
+        private System.Windows.Forms.Button InsertarMascota;
     }
 }
 
