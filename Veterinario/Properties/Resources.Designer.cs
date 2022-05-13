@@ -63,9 +63,30 @@ namespace Veterinario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap f82021fe82d2cad99a2d27ba04b42a7e {
+            get {
+                object obj = ResourceManager.GetObject("f82021fe82d2cad99a2d27ba04b42a7e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondologin {
             get {
                 object obj = ResourceManager.GetObject("fondologin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hand_drawn_seamless_pattern_of_bones_dogs_vet_background_line_art_illustration_in_black_white_colors_vector {
+            get {
+                object obj = ResourceManager.GetObject("hand-drawn-seamless-pattern-of-bones-dogs-vet-background-line-art-illustration-in" +
+                        "-black-white-colors-vector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

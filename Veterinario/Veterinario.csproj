@@ -139,6 +139,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
+    <None Include="Resources\hand-drawn-seamless-pattern-of-bones-dogs-vet-background-line-art-illustration-in-black-white-colors-vector.jpg" />
+    <None Include="Resources\f82021fe82d2cad99a2d27ba04b42a7e.png" />
     <None Include="Resources\logo-removebg-preview.png" />
     <None Include="Resources\istockphoto-501122582-1024x10241.jpg" />
     <None Include="Resources\istockphoto-501122582-1024x1024.jpg" />
