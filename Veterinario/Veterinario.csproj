@@ -118,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Ventanalogin.resx">
       <DependentUpon>Ventanalogin.cs</DependentUpon>
@@ -138,6 +139,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
+    <None Include="Resources\logo-removebg-preview.png" />
+    <None Include="Resources\istockphoto-501122582-1024x10241.jpg" />
+    <None Include="Resources\istockphoto-501122582-1024x1024.jpg" />
+    <None Include="Resources\fondologin.jpg" />
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
