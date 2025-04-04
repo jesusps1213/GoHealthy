@@ -23,11 +23,12 @@ namespace Veterinario
             this.Hide();
             VentanaPrincipal v = new VentanaPrincipal();
             v.Show();
-            if (conexion.loginVeterinario(textBox1.Text, textBox2.Text))
+
+            if (conexion.login(textBox1.Text, textBox2.Text))
             {
-            //    this.Hide();
-            //    VentanaPrincipal v = new VentanaPrincipal();
-            //    v.Show();
+            //this.Hide();
+            //VentanaPrincipal v = new VentanaPrincipal();
+              //v.Show();
             }
             else
             {
